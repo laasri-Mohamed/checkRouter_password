@@ -132,7 +132,9 @@ def URL(user,Pas, url):
     driver.maximize_window()
     driver.implicitly_wait(20)
     driver.get("http://"+url+"/")
-    #login
+
+    ###################################################################### TELECOM ROUTER ################################################################### 
+    """#login
     username = driver.find_element(by=By.XPATH,value='//*[@id="user"]')
     username.send_keys(user)
 
@@ -161,9 +163,9 @@ def URL(user,Pas, url):
     button5 = driver.find_element(by=By.XPATH,value='/html/body/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td/table/tbody/tr/td/div/div[1]/table/tbody/tr/td[2]/table/tbody/tr[2]/td/form/table[2]/tbody/tr/td[2]/table/tbody/tr[13]/td/input[1]')
     button5.click()
     
-    time.sleep(100)
-
-    """#login
+    time.sleep(100)"""
+    ###################################################################### ORANGE ROUTER ################################################################### 
+    #login
     username = driver.find_element(by=By.ID,value='Frm_Username')
     username.send_keys(user)
     
@@ -185,7 +187,7 @@ def URL(user,Pas, url):
     #For 5G
     NewPassword1 = driver.find_element(by=By.XPATH,value='//*[@id="KeyPassphrase:0"]')
     NewPassword1.clear()
-    NEWPassword1.send_keys(last())
+    NewPassword1.send_keys(last())
 
     button6 = driver.find_element(by=By.XPATH,value='//*[@id="Btn_apply_WLANSSIDConf:0"]')
     button6.click()
@@ -197,7 +199,7 @@ def URL(user,Pas, url):
     #For 4G
     NewPassword2 = driver.find_element(by=By.XPATH,value='//*[@id="KeyPassphrase:4"]')
     NewPassword2.clear()
-    NEWPassword2.send_keys(NEW())
+    NewPassword2.send_keys(NEW())
 
     button6 = driver.find_element(by=By.XPATH,value='//*[@id="Btn_apply_WLANSSIDConf:4"]')
     button6.click()
@@ -205,10 +207,10 @@ def URL(user,Pas, url):
     #logout
 
     time.sleep(2)
-    button6 = driver.find_element(by=By.XPATH,value='//*[@id="LogOffLnk"]')
-    button6.click()
+    button7 = driver.find_element(by=By.XPATH,value='//*[@id="LogOffLnk"]')
+    button7.click()
     
-    time.sleep(10)"""
+    time.sleep(100)
 
    
 
@@ -224,6 +226,4 @@ def check():
     else:
         return True
 
-"""def precedentId():
-    data=c.execute("SELECT * FROM")"""
 connect()
