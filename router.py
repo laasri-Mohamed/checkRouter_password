@@ -281,7 +281,7 @@ class window:
  
 if __name__ == '__main__':
     win = Style(theme='darkly').master
-    name = 'ORANGE WIFI'
+    name = 'ORANGE ROUTER'
     dimension = '850x400'
  
     app = window(win, dimension, name)
